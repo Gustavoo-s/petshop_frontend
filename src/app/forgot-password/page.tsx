@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-
+// Create the ForgotPassword component with the basic layout
 
 import Image from "next/image";
 // import Link from "next/link";
@@ -25,6 +25,21 @@ export default function ForgotPassword() {
             Digite seu e-mail nesse campo para que possamos te enviar uma nova senha
           </p>
         </div>
+
+        <form className="w-full">
+          <label className="block mb-2 text-gray-700">Email</label>
+          <div className="relative mb-6">
+            <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-700">
+              📧
+            </span>
+            <input
+              type="email"
+              placeholder="Digite seu e-mail"
+              className="w-full pl-10 p-3 border rounded-lg outline-none focus:ring-2 focus:ring-green-400 text-gray-700"
+              required
+            />
+          </div>
+        </form>
       </div>
     </div>
   );
