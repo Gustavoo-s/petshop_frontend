@@ -22,10 +22,10 @@ export default function ForgotPassword() {
             Redefinição de senha
           </h2>
           <p className="text-gray-600 text-center mb-6">
-            Digite seu e-mail nesse campo para que possamos te enviar uma nova senha
+            Digite seu e-mail para que possamos te enviar uma nova senha
           </p>
         </div>
-
+        
         <form className="w-full">
           <label className="block mb-2 text-gray-700">Email</label>
           <div className="relative mb-6">
@@ -38,6 +38,15 @@ export default function ForgotPassword() {
               className="w-full pl-10 p-3 border rounded-lg outline-none focus:ring-2 focus:ring-green-400 text-gray-700"
               required
             />
+          </div>
+
+          <div className="flex items-center justify-center">
+            <button
+              type="submit"
+              className="bg-gradient-to-br from-green-400 to-blue-400 text-white px-6 py-3 rounded-lg hover:from-green-500 hover:to-blue-500 transition"
+            >
+              Enviar
+            </button>
           </div>
         </form>
       </div>
